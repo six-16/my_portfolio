@@ -1,16 +1,73 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend Framework**: React 19.2.7
+- **Build Tool**: Vite 8.1.1
+- **Styling**: Tailwind CSS 4.3.3
+- **Language**: JavaScript (ES Modules)
+- **Type Checking**: TypeScript types included
+- **Linting**: ESLint with React hooks and refresh support
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js and npm installed
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+Start the development server with HMR (Hot Module Replacement):
+
+```bash
+npm run dev
+```
+
+### Build
+
+Build for production:
+
+```bash
+npm build
+```
+
+### Preview
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+### Linting
+
+Run ESLint to check code quality:
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+my_portfolio/
+├── src/              # React source code
+├── public/           # Static assets
+├── index.html        # Entry HTML file
+├── vite.config.js    # Vite configuration
+├── eslint.config.js  # ESLint configuration
+├── package.json      # Project dependencies
+└── README.md         # This file
+```
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details
