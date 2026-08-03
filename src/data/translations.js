@@ -27,7 +27,7 @@ export const translations = {
       langTitle: "Langues & Stack",
       langSubtitle: "Langues parlées",
       techSubtitle: "Technologies",
-      langs: ["Français (Natif)", "Anglais", "Allemand", "Espagnol"],
+      langs: ["Français (Natif)", "Anglais (Bilingue)", "Allemand (B2)", "Espagnol (A2-B1)"],
     },
     contact: {
       title: "Me",

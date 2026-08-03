@@ -110,3 +110,30 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Animation douce d'arrière-plan */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.08);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-25px, 25px) scale(0.95);
+  }
+}
+
+.animate-blob-1 {
+  animation: floatSlow 18s ease-in-out infinite;
+}
+
+.animate-blob-2 {
+  animation: floatReverse 22s ease-in-out infinite;
+}
