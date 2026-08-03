@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
+import { translations } from './data/translations';
 
 function App() {
+  const [lang, setLang] = useState('FR');
+  const t = translations[lang];
+
   return (
     <div className="min-h-screen bg-[#FDFCF8] text-[#292524] relative selection:bg-[#FFB7B2]/30">
       <div className="grain-overlay" />
-      <Navbar />
+      <Navbar lang={lang} setLang={setLang} t={t} />
 
       <main className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
-        <Hero />
-        <Projects />
-        <About />
-        <Contact />
+        <Hero t={t} />
+        <Projects t={t} />
+        <About t={t} />
+        <Contact t={t} />
       </main>
 
       <footer className="py-8 text-center text-xs text-[#78716C] border-t border-stone-200/60 mt-16 relative z-10">
